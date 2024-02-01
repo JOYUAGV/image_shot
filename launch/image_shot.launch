@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- <include file="$(find realsense2_camera)/launch/rs_aligned_depth.launch" /> -->
+    <!-- load the config params -->
+    <rosparam command="load" file="$(find image_shot)/config/image_shot.yaml" /> 
+    <!-- load the image_shot node -->
+    <node pkg="image_shot" type="ImageShotNode" 
+        name="ImageShotNode" respawn="false" output="screen">
+    </node> 
+            
+</launch>
