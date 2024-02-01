@@ -7,7 +7,10 @@ This repository is aimed to capture pictures from a video stream (like web camer
   
   Ubuntu 18.04 - with ROS melodic desktop-full installed or Ubuntu 20.04 - with ROS noetic desktop-full installed (Check resources on http://ros.org for installation guide)
 
-**Library Dependencies:** 
+**Library Dependencies: libopencv-dev** 
+```
+sudo apt-get install libopencv-dev
+```
 
 ## Download and Build
 **Download code**
@@ -48,7 +51,7 @@ Case 1: Start the rgbd camera (Check resources on https://github.com/IntelRealSe
 ```
 roslaunch realsense2_camera rs_aligned_depth.launch
 ```
-**launch this node**
+**Launch this node**
 
 Now you can launch this node and press key "ENTER" to capture the coresponding pictures.
 ```
