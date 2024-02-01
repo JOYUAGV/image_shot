@@ -18,7 +18,7 @@ ImageShot::ImageShot(const ros::NodeHandle& nh)
 		&ImageShot::depthCallback, this);
 
   std::string base_path = "/image_sets";
-  _save_folder = ros::package::getPath("image_shot") + base_path + "/" + _folder + "/";
+  _save_folder = ros::package::getPath("image_shot") + base_path + "/" + _data_set + "/";
 
   struct stat sb;
   if (stat(_save_folder.c_str(), &sb) == 0 && S_ISDIR(sb.st_mode)) {
@@ -132,8 +132,8 @@ void ImageShot::getParameters()
   _nodeHandle.param<std::string>(param_ns + "depth_prefix", 
 		_depth_prefix, "depth_");
 
-  _nodeHandle.param<std::string>(param_ns + "folder", 
-		_folder, "saved_images");
+  _nodeHandle.param<std::string>(param_ns + "data_set", 
+		_data_set, "saved_images");
 
 	_nodeHandle.param<double>(param_ns + "delta_stamp", _delta_stamp, 0.005);
 	_nodeHandle.param<int>(param_ns + "queue_depth", _queueDepth, 100);

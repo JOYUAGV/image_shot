@@ -66,7 +66,7 @@ private:
 	ros::Timer _timer;
 	/// string 
 	std::string _save_folder;
-	std::string _folder;
+	std::string _data_set;
 	std::string _rgb_prefix;
 	std::string _depth_prefix;
 	///int

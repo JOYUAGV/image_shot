@@ -7,8 +7,8 @@ image_shot:
   rgb_prefix: rgb_
   # depth_prefix
   depth_prefix: dep_
-  # folder
-  folder: room_442
+  # data_set
+  data_set: test
   # delta_stamp #@1ms
   delta_stamp: 0.001 
   # queue_depth
