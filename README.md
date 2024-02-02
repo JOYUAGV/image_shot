@@ -60,5 +60,6 @@ roslaunch image_shot image_shot.launch
 **Attention**: Please do not click your mouse anywhere before you finish your image capturing, or you cannot capture any pictures successfully!
 ## Result
 
-Check the capture results in the sub folder "image_shot/image_sets/data_set"!
+Check the capture results in the sub folder "image_shot/image_sets/test"!
 
+<img src="./docs/capture_rst.png" height="270" >

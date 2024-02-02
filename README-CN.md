@@ -60,4 +60,6 @@ roslaunch image_shot image_shot.launch
 **注意**: 在你完成图像采集之前，请不要随意点击你的鼠标，否则，你将无法成功采集到任何图像！
 ## 结果
 
-请在如下文件夹中查看你所采集的图像 "image_shot/image_sets/data_set"！
+请在如下文件夹中查看你所采集的图像 "image_shot/image_sets/test"！
+
+<img src="./docs/capture_rst.png" height="270" >
