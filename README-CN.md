@@ -57,7 +57,7 @@ roslaunch realsense2_camera rs_aligned_depth.launch
 ```
 roslaunch image_shot image_shot.launch
 ```
-**注意**: 在你完成图像采集之前，请不要随意点击你的鼠标，否则，你将无法成功采集到任何图像！
+**注意**: 请在每次采集图像之前，点击并激活所弹出的图像窗口，然后敲击“回车键”采集相应的图像！
 ## 结果
 
 请在如下文件夹中查看你所采集的图像 "image_shot/image_sets/test"！

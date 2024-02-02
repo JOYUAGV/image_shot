@@ -104,6 +104,18 @@ void ImageShot::timerCallback(const ros::TimerEvent& event)
       ROS_INFO_STREAM("Depth Image saved: " << depth_path);
 
       _counter++;
+    }else if(_cv_rgb_stamp!=0 && _cv_depth_stamp==0){ //仅保存rgb图像
+      std::string rgb_path = _save_folder + _rgb_prefix + std::to_string(_counter) + ".png";
+      cv::imwrite(rgb_path, _cv_rgb_ptr->image);
+      ROS_INFO_STREAM("Only RGB Image saved: " << rgb_path);
+
+      _counter++;
+    }else if(_cv_depth_stamp!=0 && _cv_rgb_stamp==0){ //仅保存depth图像
+      std::string depth_path = _save_folder + _depth_prefix + std::to_string(_counter) + ".png";
+      cv::imwrite(depth_path, _cv_depth_ptr->image);
+      ROS_INFO_STREAM("Only Depth Image saved: " << depth_path);
+
+      _counter++;
     }
   }
 }

@@ -1,5 +1,6 @@
 image_shot:
   # rgbTopicName
+  # rgbTopicName: /usb_cam/image_raw
   rgbTopicName: /camera/color/image_raw
   # depthTopicName
   depthTopicName: /camera/aligned_depth_to_color/image_raw #/camera/depth/image_rect_raw

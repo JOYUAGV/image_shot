@@ -57,7 +57,7 @@ Now you can launch this node and press key "ENTER" to capture the corresponding 
 ```
 roslaunch image_shot image_shot.launch
 ```
-**Attention**: Please do not click your mouse anywhere before you finish your image capturing, or you cannot capture any pictures successfully!
+**Attention**: Please do click and activate the image window first, and then press key "ENTER" to capture the corresponding pictures!
 ## Result
 
 Check the capture results in the sub folder "image_shot/image_sets/test"!
